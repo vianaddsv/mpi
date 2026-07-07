@@ -6,7 +6,10 @@
 
 int main(int argc, char **argv) {
     MPI_Init(&argc, &argv);
-    int *vectorA, *vectorB, *subVectorA, *subVectorB = NULL;
+    int *vectorA = NULL;
+    int *vectorB = NULL;
+    int *subVectorA = NULL;
+    int *subVectorB = NULL;
     int numProcess, myRank, registerByVector;
     int subVectorProduct = 0;
     int totalProduct = 0;
